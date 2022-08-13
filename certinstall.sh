@@ -7,6 +7,8 @@ info=$(tput setaf 2)
 error=$(tput setaf 160)
 warn=$(tput setaf 214)
 reset=$(tput sgr0)
+clear
+clear
 echo -e "
 
 ─█▀▀█ █▀▀ █▀▄▀█ █▀▀ ─ █▀▀ █──█ 　 ░█▀▀█ █▀▀ █▀▀█ ▀▀█▀▀ 　 ▀█▀ █▀▀▄ █▀▀ ▀▀█▀▀ █▀▀█ █── █── 
@@ -29,3 +31,5 @@ bash acme.sh --installcert -d $domain --fullchainpath /root/xray.crt --keypath /
 echo "##-	SUCCESS -##"
 echo "Your key path is : /root/xray.key"
 echo "Your cert path is : /root/xray.crt"
+sleep 10
+clear 
